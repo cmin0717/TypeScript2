@@ -16,7 +16,7 @@ const printName = (p: IMan) => {
 }
 
 // printName(10) // 10은 number타입이기에 IMan 타입에 해당하지 못하기에 컴파일 자체에서 오류가 발생한다.
-printName(undefined)
+// printName(undefined)
 // 하지만 undefined는 최하위 계층이기에 모든 타입에 해당할수잇다. 
 // 빨간 줄이 있지만 컴파일시 그냥 진행된다.
 // 그렇게 JS파일로 변환되고 실제로 함수가 실행되면 undefined타입에서 .name 속성에 접근하려고 하니 오류가 발생한것이다.

@@ -73,4 +73,35 @@ ptr3({title:'sads', publisher:'safsad', price:21421, author:'sadfafs'}, 'title')
 // enum을 사용하여 더욱 명확하게 키값을 사용할수있게 할수있다.
 ptr3({title:'sads', publisher:'safsad', price:21421, author:'sadfafs'}, IBook_element.price)
 
+
 // key와 같이 쓰는 타입 3
+
+interface IUser {
+    name: string
+    age: number
+}
+interface IBook2 {
+    title: string
+    price: number
+}
+interface ICart {
+    userName: string
+    bookName: string
+}
+
+interface IUserInfo {
+    user: IUser
+    book: IBook2
+    cart: ICart
+}
+
+const login = (params: IUserInfo['user']) => {
+    console.log(params.age)
+    console.log(params.name)
+}
+login({name:'asdfas', age:23424})
+
+const search_book = (params: IUserInfo['book']) => {
+    console.log(params.title)
+}
+search_book({title:'sasadf', price:324})

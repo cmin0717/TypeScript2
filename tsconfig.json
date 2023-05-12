@@ -12,12 +12,12 @@
     // "disableReferencedProjectLoad": true,             /* Reduce the number of projects loaded automatically by TypeScript. */
 
     /* Language and Environment */
-    // tagert : 어떤 JS버전으로 컴파일 할지 설정
-    "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "target": "es2016",                               /* 어떤 JS버전으로 컴파일 할지 설정 */
     // "lib": [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
     // "jsx": "preserve",                                /* Specify what JSX code is generated. */
-    // "experimentalDecorators": true,                   /* Enable experimental support for legacy experimental decorators. */
-    // "emitDecoratorMetadata": true,                    /* Emit design-type metadata for decorated declarations in source files. */
+    // 데코레이터를 사용하기 위해 아래 2가지 옵션을 켜줘야 한다.
+    "experimentalDecorators": true,                   /* TS에서 데코레이터를 사용할수있게 해주는 옵션이다. */
+    "emitDecoratorMetadata": true,                    /* metadata와 decorator를 컴파일 결과에 포함할 것이냐에 대한 것 */
     // "jsxFactory": "",                                 /* Specify the JSX factory function used when targeting React JSX emit, e.g. 'React.createElement' or 'h'. */
     // "jsxFragmentFactory": "",                         /* Specify the JSX Fragment reference used for fragments when targeting React JSX emit e.g. 'React.Fragment' or 'Fragment'. */
     // "jsxImportSource": "",                            /* Specify module specifier used to import the JSX factory functions when using 'jsx: react-jsx*'. */
@@ -27,8 +27,7 @@
     // "moduleDetection": "auto",                        /* Control what method is used to detect module-format JS files. */
 
     /* Modules */
-    // module에는 AMD와 commonjs가 있는데 AMD는 브라우저에서 실행, commonJS는 node에서 실행(왠만하면 node에서 실행)
-    "module": "commonjs",                                /* Specify what module code is generated. */
+    "module": "commonjs",         /* module에는 AMD와 commonjs가 있는데 AMD는 브라우저에서 실행, commonJS는 node에서 실행(왠만하면 node에서 실행) */
     // "rootDir": "./",                                  /* Specify the root folder within your source files. */
     // "moduleResolution": "node10",                     /* Specify how TypeScript looks up a file from a given module specifier. */
     // "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */

@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/cmin0717/TypeScript2/issues"
   },
-  "homepage": "https://github.com/cmin0717/TypeScript2#readme"
+  "homepage": "https://github.com/cmin0717/TypeScript2#readme",
+  "devDependencies": {
+    "@tsconfig/node18": "^2.0.1",
+    "@types/node": "^20.1.3"
+  }
 }
